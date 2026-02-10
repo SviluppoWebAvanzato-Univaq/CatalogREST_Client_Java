@@ -150,7 +150,7 @@ public class CatalogREST_Client {
         executeAndDump("Prodotti in sezione", get_request);
 
         get_request = new HttpGet(baseURI + "/sections/frutta/products/count");
-        get_request.setHeader("Accept", "application/json");
+        get_request.setHeader("Accept", "text/plain");
         executeAndDump("Numero prodotti in sezione", get_request);
 
         get_request = new HttpGet(baseURI + "/products?tag=bio,vegan");
